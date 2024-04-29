@@ -17,6 +17,10 @@ app.get('/signup', (req, res) => {
     
 });
 
+app.get('/login', (req, res) => {
+    res.sendFile(path.join(publicPath, 'login.html'));
+   
+});
 app.get('/', (req, res) => {
      res.sendFile(path.join(publicPath, 'login.html'));
     
